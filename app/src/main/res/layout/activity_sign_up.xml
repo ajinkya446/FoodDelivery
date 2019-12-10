@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="369dp"
+            android:layout_height="504dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/design_default_color_primary">
+
+            <LinearLayout
+                android:layout_width="323dp"
+                android:layout_height="478dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/fname"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:hint="User Name"
+                    android:inputType=""
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+                <EditText
+                    android:id="@+id/Address"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Address"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:inputType="phone"
+                    android:hint="Contact"
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+
+                <EditText
+                    android:id="@+id/passw1"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:hint="User Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+                <EditText
+                    android:id="@+id/passw2"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="45dp"
+                    android:drawableLeft="@drawable/ic_lock_black_24dp"
+                    android:drawablePadding="20dp"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textColorHint="@android:color/holo_orange_light" />
+
+                <Button
+                    android:id="@+id/rgst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginLeft="-10dp"
+                    android:backgroundTint="@android:color/white"
+                    android:drawableRight="@drawable/ic_person_add_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:padding="10dp"
+                    android:text="Sign Up"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
